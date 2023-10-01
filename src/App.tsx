@@ -11,7 +11,6 @@ function App() {
                 display: "flex",
                 justifyContent: "space-between",
                 borderBottom: "2px solid var(--picton-blue)",
-                // columnGap: "1em",
             }}
         >
             <h1
@@ -38,6 +37,7 @@ function App() {
             boxShadow: "inset var(--yale-blue) 0 0 10px, inset var(--yale-blue) 0 0 20px, inset var(--yale-blue) 0 0 30px"
         }}>
         </main>
+        {/*TODO sticky I guess*/}
         <footer style={{
             width: "100%",
             backgroundColor: "var(--russian-violet)",
