@@ -26,7 +26,7 @@ function App() {
                     margin: "0.67em 10px",
                 }}
             >
-                Big Things Coming
+                Things Be Cookin
             </h1>
         </header>
         <main style={{
