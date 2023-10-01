@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-clip-margin: 0;
+  overflow: clip;
 }
 
 .logo {
@@ -27,9 +30,18 @@
   }
 }
 
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear, hue-rotate infinite 20s linear;
   }
 }
 

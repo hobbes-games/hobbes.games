@@ -1,33 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <header
+            style={{
+                width: "100%",
+                backgroundColor: "var(--russian-violet)",
+                display: "flex",
+                justifyContent: "space-between",
+                borderBottom: "2px solid var(--picton-blue)",
+                // columnGap: "1em",
+            }}
+        >
+            <h1
+                style={{
+                    margin: "0.67em 10px",
+                }}
+            >
+                Hobbes Studios
+            </h1>
+            <h1
+                style={{
+                    color: "var(--yale-blue)",
+                    margin: "0.67em 10px",
+                }}
+            >
+                Big Things Coming
+            </h1>
+        </header>
+        <main style={{
+            flexGrow: 1,
+            background: 'url(hobbes.jpg)',
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            boxShadow: "inset var(--yale-blue) 0 0 10px, inset var(--yale-blue) 0 0 20px, inset var(--yale-blue) 0 0 30px"
+        }}>
+        </main>
+        <footer style={{
+            width: "100%",
+            backgroundColor: "var(--russian-violet)",
+            color: "var(--yale-blue)",
+            borderTop: "2px solid var(--picton-blue)"
+        }}>
+            Copyright &copy;2023 Hobbes Studios | edward@auttonberri.es
+        </footer>
     </>
   )
 }
